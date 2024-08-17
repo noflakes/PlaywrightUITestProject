@@ -1,0 +1,27 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript output directory
+dist/
+
+# Playwright trace and video files
+test-results/
+*.trace
+*.mp4
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# npm package lock file (if you use yarn, replace with yarn.lock)
+package-lock.json

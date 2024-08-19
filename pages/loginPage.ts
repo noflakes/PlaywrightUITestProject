@@ -15,8 +15,14 @@ export class LoginPage {
     this.errorMessage = page.locator(".error-message-container");
   }
 
+  // async goto() {
+  //   const baseURL = process.env.baseURL; // Use environment variable or default URL
+  //   await this.page.goto(baseURL);
+  // }
   async goto() {
-    await this.page.goto("https://www.saucedemo.com/");
+    console.log("baseURL environment variable:", process.env.BASE_URL);
+    const baseUrl = process.env.BASE_URL ?? "https://default.url";
+    await this.page.goto(baseUrl);
   }
 
   async login(username: string, password: string) {
